@@ -1,1 +1,2 @@
-// Remove this
+const app = angular.module('PetShopApp', []);
+
