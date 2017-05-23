@@ -1,0 +1,28 @@
+{
+  "name": "Pooch_Online_Store",
+  "version": "1.0.0",
+  "description": "A multi-view, single-page online shop application built using Angular framework. This is a collaborative project in The Iron Yard Front-End Course. Collaborators are /PrajapatiS, /nickFalcone, and /colbymartin",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "@types/node": "^7.0.22",
+    "foundation-sites": "^6.3.1",
+    "gulp": "^3.9.1",
+    "gulp-browser": "^3.0.4",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colbymartin/Pooch_Online_Store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colbymartin/Pooch_Online_Store/issues"
+  },
+  "homepage": "https://github.com/colbymartin/Pooch_Online_Store#readme"
+}
