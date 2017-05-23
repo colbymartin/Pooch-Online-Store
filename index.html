@@ -10,8 +10,24 @@
     <script src="app.js"></script>
 </head>
 
-<body>
-    <h1>Pooch</h1>
+<body ng-app="PetShopApp">
+    <section class="head">
+        <img src="https://d13yacurqjgara.cloudfront.net/users/219762/screenshots/2342641/dog.png">
+        <h1>Pooch: Shopping for Man's Best Friend</h1>
+    </section>
+
+    <section ng-controller="ItemListController">
+        <!--<item ng-repeat="item in items"></item>-->
+        <ul>
+            <li ng-repeat="item in items"></li>
+        </ul>
+    </section>
+
+
+
+    <footer>
+        <img src="https://d13yacurqjgara.cloudfront.net/users/219762/screenshots/2342641/dog.png">
+    </footer>
 </body>
 
 </html>
