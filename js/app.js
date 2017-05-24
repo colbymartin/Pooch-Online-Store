@@ -1,4 +1,4 @@
-const app = angular.module('PetShopApp', []);
+const app = angular.module('PetShopApp', ['ui.router']);
 
 // require service
 const services = [
@@ -25,9 +25,20 @@ for (let i = 0; i < controllers.length; i++) {
 const components = [
     require('./components/item'),
     require('./components/search'),
+    require('./components/opening'),
 ]
 
 // loop all components
 for (let i = 0; i < components.length; i++) {
     app.component(components[i].name, components[i].array);
 }
+
+
+app.config( function ($stateProvider) {
+    
+    $stateProvider.state({
+        name: "front_page",
+        url: '/front_page',
+        component: "opening"
+    });
+})
