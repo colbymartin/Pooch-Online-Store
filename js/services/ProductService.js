@@ -5,7 +5,7 @@ module.exports = {
 
     $http.get('https://tiy-28202.herokuapp.com/shop/items').then(function (response) {
       for (let i =0; i < response.data.length; i++) {
-        console.log("hi");
+        //console.log("hi");
         items.push({
           name: response.data[i].name,
           pic: response.data[i].image,
@@ -22,8 +22,6 @@ module.exports = {
       search: function (search) {
         $http.get('https://tiy-28202.herokuapp.com/shop/search?q=' + search).then(function (response) {
           console.log(response);
-//          friend.username = response.data.login;
-//          friend.pic = response.data.avatar_url;
         });
 
       },
