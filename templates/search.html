@@ -1,4 +1,11 @@
 <section class="search">
-  <input type="text" ng-model="product_name" placeholder="Find...">
-  <button ng-click="search()">Search</button>
+  <input type="text" ng-model="search" placeholder="Find...">
+  <button ng-click="search()">Search</button> 
+  <!--may not need button-->
+
+  <li ng-repeat="item in items | filter:search">
+    <p>{{ item.name }}</p>
+    <p>${{ item.brand }}</p>
+    <p>{{ item.description }}</p>
+  </li>
 </section>
