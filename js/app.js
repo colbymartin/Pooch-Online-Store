@@ -1,14 +1,5 @@
 const app = angular.module('PetShopApp', ['ui.router']);
 
-app.config(function ($stateProvider) {
-    $stateProvider.state({
-        name: 'results',
-        // colon indicates a route parameter
-        url: '/results',
-        // need to assign this username
-        component: 'results',
-    });
-});
 // require service
 const services = [
     require('./services/ProductService')
@@ -35,6 +26,7 @@ const components = [
     require('./components/item'),
     require('./components/search'),
     require('./components/opening'),
+    require('./components/results'),
 ]
 
 // loop all components
@@ -50,4 +42,11 @@ app.config( function ($stateProvider) {
         url: '/front_page',
         component: "opening"
     });
+
+    $stateProvider.state({
+        name: 'results',
+        url: '/results/:searchstring',
+        component: 'results',
+    });
+
 })
