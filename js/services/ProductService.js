@@ -4,12 +4,13 @@ module.exports = {
     let items = [];
 
     $http.get('https://tiy-28202.herokuapp.com/shop/items').then(function (response) {
-      for (let i =0; i < response.length; i++) {
+      for (let i =0; i < response.data.length; i++) {
+        console.log("hi");
         items.push({
-          name: response[i].name,
-          pic: response[i].pic,
-          brand: response[i].brand,
-          price: response[i].price,
+          name: response.data[i].name,
+          pic: response.data[i].image,
+          brand: response.data[i].brand,
+          price: response.data[i].price,
         })
       }
     });
