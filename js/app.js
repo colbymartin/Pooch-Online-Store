@@ -2,7 +2,7 @@ const app = angular.module('PetShopApp', []);
 
 // require service
 const services = [
-    require('/services/ProductService')
+    require('./services/ProductService')
 ];
 
 // loop all services
