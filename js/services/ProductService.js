@@ -19,9 +19,9 @@ module.exports = {
       getItems: function () {
           return items;
       },
-      search: function () {
-        $http.get('https://shop/search?q=' + product_name + '/').then(function (response) {
-          console.log(response.data);
+      search: function (search) {
+        $http.get('https://tiy-28202.herokuapp.com/shop/search?q=' + search).then(function (response) {
+          console.log(response);
 //          friend.username = response.data.login;
 //          friend.pic = response.data.avatar_url;
         });
