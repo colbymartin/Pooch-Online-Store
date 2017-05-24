@@ -1,5 +1,14 @@
-const app = angular.module('PetShopApp', []);
+const app = angular.module('PetShopApp', ['ui.router']);
 
+app.config(function ($stateProvider) {
+    $stateProvider.state({
+        name: 'results',
+        // colon indicates a route parameter
+        url: '/results',
+        // need to assign this username
+        component: 'results',
+    });
+});
 // require service
 const services = [
     require('./services/ProductService')
@@ -12,13 +21,13 @@ for (let i = 0; i < services.length; i++) {
 
 // require controllers
 const controllers = [
-  require('./controllers/itemList'),
-  require('./controllers/search'),
+    require('./controllers/itemList'),
+    require('./controllers/search'),
 ];
 
 // loop all controllers
 for (let i = 0; i < controllers.length; i++) {
-  app.controller(controllers[i].name, controllers[i].func);
+    app.controller(controllers[i].name, controllers[i].func);
 };
 
 // require components
