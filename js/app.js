@@ -34,7 +34,6 @@ for (let i = 0; i < components.length; i++) {
     app.component(components[i].name, components[i].array);
 }
 
-
 app.config( function ($stateProvider) {
     
     $stateProvider.state({
@@ -50,3 +49,4 @@ app.config( function ($stateProvider) {
     });
 
 })
+
