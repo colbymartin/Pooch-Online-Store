@@ -16,7 +16,11 @@
         <h1>Pooch: Shopping for Man's Best Friend</h1>
     </section>
 
-    <section ng-controller="ItemListController">
+    <section ng-controller="SearchController">
+        <search></search>
+    </section>
+
+    <section ng-controller="ItemListController">   
         <ul>
             <item ng-repeat="item in items" which="item"></item>
         </ul>
