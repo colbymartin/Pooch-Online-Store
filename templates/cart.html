@@ -3,7 +3,7 @@
 <ul>
     <li ng-repeat="item in items">
         <p>{{ item.name }}</p>
-        <p>{{ item.price }}</p>
+        <p>{{ item.price.toFixed(2) }}</p>
         <p>{{ item.total }}</p>
         
     </li>

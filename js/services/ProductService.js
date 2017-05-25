@@ -39,6 +39,7 @@ module.exports = {
 
         });
         return searchResults;
+        // this return statement was too nested and not returning properly
       },
     }
 
