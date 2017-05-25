@@ -15,6 +15,7 @@ const controllers = [
     require('./controllers/itemList'),
     require('./controllers/search'),
     require('./controllers/results'),
+    require('./controllers/cart'),
 ];
 
 // loop all controllers
@@ -26,6 +27,7 @@ for (let i = 0; i < controllers.length; i++) {
 const components = [
     require('./components/item'),
     require('./components/search'),
+    require('./components/cart'),
     require('./components/opening'),
     require('./components/results'),
 ]
