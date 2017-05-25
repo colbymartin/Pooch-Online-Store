@@ -12,10 +12,10 @@ for (let i = 0; i < services.length; i++) {
 
 // require controllers
 const controllers = [
-
-  require('./controllers/itemList'),
-  require('./controllers/search'),
-  require('./controllers/cart'),
+    require('./controllers/itemList'),
+    require('./controllers/search'),
+    require('./controllers/results'),
+    require('./controllers/cart'),
 ];
 
 // loop all controllers
