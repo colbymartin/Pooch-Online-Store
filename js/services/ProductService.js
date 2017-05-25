@@ -4,7 +4,7 @@ module.exports = {
     let items = [];
     let searchResults = [];
     let carts = [];
-    
+
     $http.get('https://tiy-28202.herokuapp.com/shop/items').then(function (response) {
       for (let i = 0; i < response.data.length; i++) {
         //console.log("hi");
@@ -21,10 +21,10 @@ module.exports = {
       getItems: function () {
         return items;
       },
-      getCarts: function(){
+      getCarts: function () {
         return carts;
       },
-      
+
       search: function (search) {
         $http.get('https://tiy-28202.herokuapp.com/shop/search?q=' + search).then(function (response) {
           console.log(response);
@@ -36,9 +36,9 @@ module.exports = {
               price: response.data[i].price,
             })
           }
-          return searchResults;
 
         });
+        return searchResults;
       },
     }
 
