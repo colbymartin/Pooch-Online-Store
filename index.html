@@ -15,7 +15,6 @@
     <section class="head">
         <img src="https://d13yacurqjgara.cloudfront.net/users/219762/screenshots/2342641/dog.png">
         <h1>Pooch: Shopping for Man's Best Friend</h1>
-       
     </section>
     <section>
         <search></search>
@@ -31,9 +30,16 @@
         <ul>
             <item ng-repeat="item in items" which="item"></item>
         </ul>
+
+    </section>
+    <section ng-controller="CartController">
+        <cart></cart>
+    </section>
     </section>-->
 
-
+    <section ng-controller="CartController">
+        <cart></cart>
+    </section>
 
     <!--<footer>
         <img src="https://d13yacurqjgara.cloudfront.net/users/219762/screenshots/2342641/dog.png">
