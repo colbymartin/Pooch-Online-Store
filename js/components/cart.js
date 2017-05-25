@@ -1,10 +1,10 @@
 module.exports={
-    name:"cart",
-    array:{
-        templateUrl:" templates/cart.js",
+    name: "cart",
+    array: {
+        templateUrl: "templates/cart.html",
         controller: "CartListController",
-        bindings:{
-            which:"<",
+        bindings: {
+            which: "<",
         }
     }
 }

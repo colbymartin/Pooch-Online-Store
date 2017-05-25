@@ -1,11 +1,11 @@
 <h2>Shopping Cart </h2>
-<img>
+
 <ul>
     <li ng-repeat="item in items">
         <p>{{ item.name }}</p>
-        <p>{{ item.price }}</p>
+        <p>{{ item.price.toFixed(2) }}</p>
         <p>{{ item.total }}</p>
-        </p>
+        
     </li>
 </ul>
 <input type="txt_name" ng-model="user_name" placeholder="Enter username">
