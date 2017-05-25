@@ -1,6 +1,9 @@
 module.exports = {
   name: "SearchController",
   func: function ($scope, ProductService) {
-    $scope.items = ProductService.search(item.name);
+    $scope.searchInput = '';
+    $scope.search = function () {
+      ProductService.search($scope.searchInput);
+    }
   }
 } 

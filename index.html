@@ -5,6 +5,7 @@
     <title>Pooch Online Pet Store</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.js"></script>
     <script src="https://npmcdn.com/angular-ui-router@1.0.0-beta.3/release/angular-ui-router.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
@@ -19,16 +20,26 @@
         <search></search>
     </section>
 
-    <section ng-controller="ItemListController">
+
+    <ui-view></ui-view>
+    <!--<section ng-controller="SearchController">
+        <search></search>
+    </section>
+
+    <section ng-controller="ItemListController">   
         <ul>
             <item ng-repeat="item in items" which="item"></item>
         </ul>
+
     </section>
     <section ng-controller="CartController">
         <cart></cart>
     </section>
+    </section>-->
 
-
+    <section ng-controller="CartController">
+        <cart></cart>
+    </section>
 
     <!--<footer>
         <img src="https://d13yacurqjgara.cloudfront.net/users/219762/screenshots/2342641/dog.png">
