@@ -1,5 +1,5 @@
 module.exports={
-    name:"CartController",
+    name:"CartListController",
     func: function($scope, ProductService){
         $scope.items= ProductService.getCarts();
     }
