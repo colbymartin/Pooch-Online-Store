@@ -3,4 +3,4 @@ module.exports = {
     func: function ($scope, ProductService) {
         $scope.items = ProductService.getItems();
     }
-}
+} 

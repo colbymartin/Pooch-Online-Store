@@ -14,6 +14,7 @@ for (let i = 0; i < services.length; i++) {
 const controllers = [
     require('./controllers/itemList'),
     require('./controllers/search'),
+    require('./controllers/results'),
 ];
 
 // loop all controllers
